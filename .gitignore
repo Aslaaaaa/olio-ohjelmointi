@@ -1,4 +1,4 @@
 build/
+.qtcreator/
 *.user
 *.user.*
-.qtcreator/
