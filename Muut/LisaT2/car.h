@@ -9,10 +9,15 @@ private:
     string make;
     string model;
     int year;
+
 public:
-    Car();
-    Car(string ma, string mo, int y);
-    void display();
+    Car(string, string, int);
+    string getMake() const;
+    void setMake(string ma);
+    string getModel() const;
+    void setModel(const string &newModel);
+    int getYear() const;
+    void setYear(int newYear);
 };
 
 #endif // CAR_H
