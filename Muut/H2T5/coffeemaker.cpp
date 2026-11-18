@@ -55,8 +55,8 @@ void CoffeeMaker::makeCoffee()
 
 void CoffeeMaker::showStatus()
 {
-    cout<<"Automaatissa on vetta: "<<v_maara<<endl;
-    cout<<"Automaatissa on papuja "<<papu_maara<<endl;
+    cout<<"Automaatissa on vetta: "<<v_maara<<" dl"<<endl;
+    cout<<"Automaatissa on papuja "<<papu_maara<<" dl"<<endl;
     if(tila==false){
         cout<<"Automaatti on OFF tilassa"<<endl;
     }
