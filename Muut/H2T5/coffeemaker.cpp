@@ -44,6 +44,9 @@ void CoffeeMaker::makeCoffee()
     //sovitaan että vettä tulee olla vähintään 2dl ja papuja 1dl
     if(tila==true && v_maara >= 2 && papu_maara >=1){
         cout<<"Kahvi valmistuu pian"<<endl;
+        valmistetut++;
+        v_maara=v_maara-2;
+        papu_maara=papu_maara-1;
     }
     else{
         cout<<"Tarkista etta automaatti on paalla ja tarvikkeita on tarpeeksi"<<endl;
@@ -60,4 +63,9 @@ void CoffeeMaker::showStatus()
     else{
         cout<<"Automaatti on ON tilassa"<<endl;
     }
+}
+
+void CoffeeMaker::showMade()
+{
+    cout<<"Automaatilla on valmistettu "<<valmistetut<<" annosta"<<endl;
 }
