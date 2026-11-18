@@ -1,5 +1,8 @@
 #include "car.h"
 #include "rectangle.h"
+#include "student.h"
+#include<memory>
+
 
 #include <iostream>
 
@@ -21,5 +24,13 @@ int main()
     cout<<"Leveys = " << objRectangle1->getArea() << endl;
     cout<<"Korkeus = " << objRectangle1->getCircum() << endl;
 
+    unique_ptr<Student> ObjStudent1 = make_unique<Student>();
+    ObjStudent1->setName("Maukka Majakka");
+    ObjStudent1->setStudentNumber(12345678);
+    ObjStudent1->setAverage(7.5);
+
+    cout<<"Nimi = "<<ObjStudent1->getName()<<endl;
+    cout<<"Student numero = "<<ObjStudent1->getStudentNumber()<<endl;
+    cout<<"Keskiarvo = "<<ObjStudent1->getAverage()<<endl;
     return 0;
 }
