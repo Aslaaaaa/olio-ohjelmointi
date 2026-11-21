@@ -5,8 +5,11 @@
 
 class Student : public Person
 {
+private:
+    int studentId;
 public:
-    Student();
+    Student(string, int);
+    virtual void sayStatus() override;
 };
 
 #endif // STUDENT_H
